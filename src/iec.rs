@@ -104,7 +104,6 @@ macro_rules! impl_unit {
             }
         }
 
-
         impl Div<u64> for $name {
             type Output = Self;
             fn div(self, rhs: u64) -> Self::Output {

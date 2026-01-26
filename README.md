@@ -6,7 +6,8 @@
 ## Features
 
 - `no_std`
-- `const`
+- Fully typed data size units (IEC and SI)
+- Operator overloading
 
 ## Why
 

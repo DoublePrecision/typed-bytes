@@ -3,5 +3,10 @@ name = "typed-bytes"
 version = "1.0.0"
 edition = "2024"
 license = "MIT OR Apache-2.0"
+description = "Fully typed data size units (IEC and SI) with operator overloading."
+repository = "https://github.com/DoublePrecision/typed-bytes"
+homepage = "https://github.com/DoublePrecision/typed-bytes"
+keywords = ["units", "bytes", "si", "iec", "size"]
+categories = ["data-structures", "no-std"]
 
 [dependencies]

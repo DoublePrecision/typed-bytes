@@ -2,13 +2,29 @@
 
 > A `![no_std]`, const first Rust library for strongly-typed data size units (KiB, MiB, KB, MB, etc.).
 
+
+## Features
+
+- `no_std`
+- `const`
+
+## Why
+
+During our work at [haxiom.io](https://haxiom.io) we found many cases of file size comparisons 
+where we accidentally mixed IEC and SI units. Likewise, using plain `u64` for file sizes 
+led to many bugs even if they are named correctly, for example `MAX_FILE_SIZE` could be 
+interpreted as either bytes or kilobytes! This library provides a safe and type-safe way to 
+handle file sizes with proper units, ensuring that the correct unit is used in each 
+comparison. Note that most of the work has been lifted from the internal implementation at haxiom internal
+repository.
+
 ## Installation
 
 Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-typed-bytes = "0.1.0"
+typed-bytes = "1.0.0"
 ```
 
 ## Usage
@@ -74,3 +90,20 @@ if Bytes::from(kib) > Bytes::from(kb) {
     println!("1 KiB is greater than 1 KB");
 }
 ```
+
+## License
+
+Licensed under either of
+
+ * Apache License, Version 2.0
+   ([LICENSE-APACHE](LICENSE-APACHE) or http://www.apache.org/licenses/LICENSE-2.0)
+ * MIT license
+   ([LICENSE-MIT](LICENSE-MIT) or http://opensource.org/licenses/MIT)
+
+at your option.
+
+## Contribution
+
+Unless you explicitly state otherwise, any contribution intentionally submitted
+for inclusion in the work by you, as defined in the Apache-2.0 license, shall be
+dual licensed as above, without any additional terms or conditions.

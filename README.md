@@ -1,5 +1,11 @@
 # typed-bytes
 
+[![Crates.io](https://img.shields.io/crates/v/typed-bytes)](https://crates.io/crates/typed-bytes)
+[![Crates.io Downloads](https://img.shields.io/crates/d/typed-bytes)](https://crates.io/crates/typed-bytes)
+[![Docs.rs](https://img.shields.io/docsrs/typed-bytes)](https://docs.rs/typed-bytes)
+[![License](https://img.shields.io/badge/license-Apache--2.0%2FMIT-blue)](#license)
+[![no_std](https://img.shields.io/badge/no__std-compatible-success)](https://docs.rust-embedded.org/book/intro/no-std.html)
+
 > A `![no_std]`, const first Rust library for strongly-typed data size units (KiB, MiB, KB, MB, etc.).
 
 
